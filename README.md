@@ -1,8 +1,9 @@
 <h1>KIT Shopping Cart</h1>
-This is a sample project that uses Next.js, TypeScript, REDUX toolkit, Saga, and Styled Component.
+This is a sample project that uses Next.js, TypeScript, Redux-toolkit, Redux-Saga, Redux-persist, Redux-Toastr, axios, and Styled Component.
 
 [DEMO](https://next-redux-saga-shopping-cart.vercel.app)
 
+![image](https://user-images.githubusercontent.com/123214145/226206651-e83f4b31-eae2-4c8e-8a8a-bb0063219eea.png) 
 <h2>API</h2>
 The application receives a list of products through an AP (https://fakestoreapi.com)
 
@@ -36,7 +37,9 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React 
+pages
+.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
