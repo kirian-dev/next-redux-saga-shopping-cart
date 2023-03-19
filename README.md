@@ -1,7 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>KIT Shopping Cart</h1>
+This is a sample project that uses Next.js, TypeScript, REDUX toolkit, Saga, and Styled Component.
 
+[DEMO](https://next-redux-saga-shopping-cart.vercel.app)
+
+<h2>API</h2>
+The application receives a list of products through an AP (https://fakestoreapi.com)
+
+<h2>Shopping Cart</h2>
+The shopping cart state is managed using REDUX toolkit with appropriate state layers and actions. The functionality of adding and deleting items in the cart with the ability to change the number of items is implemented. The data validation is performed when adding a product to the cart (for example, checking for an empty value or a negative quantity value). The functionality of displaying the sum of all items in the cart is also implemented.
+
+<h2>Asynchronous Operations</h2>
+Saga is used for asynchronous operations in this project.
+
+<h2>Accessibility</h2>
+The application is accessible and follows accessibility guidelines.
+
+Additional Features
+The state of the basket is saved between user sessions using local storage.
+The ability to drag and drop products between the product list and cart using Drag and Drop is implemented.
 ## Getting Started
-
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 First, run the development server:
 
 ```bash
