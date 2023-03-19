@@ -1,3 +1,23 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": "next",
+	"rules": {
+		"react/react-in-jsx-scope": "off", // Allow using JSX without importing React
+		"react/jsx-filename-extension": [
+			1,
+			{ "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+		], // Allow JSX in .js, .jsx, .ts and .tsx files
+		"import/prefer-default-export": "off", // Allow named exports
+		"import/no-extraneous-dependencies": ["error", { "devDependencies": true }], // Enforce importing dev dependencies only in development files
+		"no-unused-vars": [
+			"error",
+			{
+				"args": "none",
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^product$"
+			}
+		], // Warn against unused variables
+		"semi": ["error", "always"], // Enforce using semicolons
+		"quotes": ["error", "single"], // Enforce using single quotes
+		"indent": ["error", "tab"] // Enforce using 2 tabs for indentation
+	}
 }

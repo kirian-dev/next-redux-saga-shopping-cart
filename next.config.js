@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+	reactStrictMode: true,
+	env: {
+		STORE_APP_URL: process.env.NEXT_STORE_APP_URL,
+		APP_URL: process.env.NEXT_BASE_URL,
 
-module.exports = nextConfig
+	},
+	images: {
+		domains: ['fakestoreapi.com'],
+	},
+};
+
+module.exports = nextConfig;
