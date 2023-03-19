@@ -102,16 +102,13 @@ export const CartListItem: FC<CartListItemProps> = ({ item }) => {
 
 	return (
 		<ListItem onDragStart={handleOnDrag}>
-			<div>
-				<Image
-					src={item.image}
-					alt={item.title}
-					width={125}
-					height={125}
-					priority
-					style={{ width: 'auto', height: 'auto' }}
-				/>
-			</div>
+			<Image
+				src={item.image}
+				alt={item.title}
+				width={125}
+				height={125}
+				priority
+			/>
 			<ItemText>
 				<h3>{item.title.slice(0, 20)}</h3>
 				<h3>${(item.price * (item.quantity || 1)).toFixed(2)}</h3>
